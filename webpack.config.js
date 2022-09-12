@@ -51,7 +51,7 @@ module.exports = (env, options) => {
           test: /\.(ts|tsx)$/,
           exclude: '/node_modules/',
           use: {
-            loader: 'swc-loader', // 신형 로더 사용
+            loader: 'swc-loader', // 신형 로더 사용 swc > esbuild >>> babel-loader
           },
         },
         {

@@ -21,8 +21,12 @@
   "keywords": [],
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
     "@swc/core": "^1.3.0",
+    "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
+    "esbuild-loader": "^2.20.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "swc-loader": "^0.2.3",
