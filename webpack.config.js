@@ -19,7 +19,7 @@ module.exports = (env, options) => {
       port, // 개발서버 포트
       hot: true, // 저장하면 바로 띄우기
       devMiddleware: {
-        writeToDisk: true,
+        writeToDisk: true, // 개발하면서 빌드 라이브로 진행하기
       },
       client: {
         overlay: true, // 에러나면 브라우저에 띄우기
@@ -34,7 +34,7 @@ module.exports = (env, options) => {
       extensions: ['.js', '.jsx', '.ts', '.tsx'], // 브라우저, Node.js 소스는 이 범주 안에 전부 들어온다.
     },
     output: {
-      path: path.resolve(__dirname + '/dist'),
+      path: path.resolve(__dirname, 'dist'),
       filename: isDevMode ? '[name].bundle.js' : '[name].[contenthash].js', // 번들링 될 때 어떻게 저장할지, entry에서 지정한 이름 규칙 그대로
       publicPath: isDevMode ? '/' : './',
     },
